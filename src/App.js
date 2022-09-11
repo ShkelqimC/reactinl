@@ -1,17 +1,39 @@
 import React from "react";
+import Nav from './components/Nav'
+import './index.css'
+import Home from './components/Home'
+import Todos from './components/Todos'
+import ErrorPage from './components/ErrorPage'
+import DadJokes from './components/DadJokes'
+import './style/App.css'
+import { v4 as uuidv4 } from 'uuid';
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route,
-  Link
-} from "react-router-dom";
-import './App.css';
+  Link,
+  useNavigate
+} from 'react-router-dom'
 
 function App() {
   return (
-    <div>
-      <Car />
-    </div>
+    <Router>
+
+      <nav className="navbar">
+        <h2>Zassignment1</h2>
+        <div className="navLinks">
+
+          <Link className="nav-link" to="/Todos">Todos</Link>
+          <Link className="nav-link" to="/DadJokes">Dad Jokes</Link>
+        </div>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="Todos" element={<Todos />} />
+        <Route path="/DadJokes" element={<DadJokes />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
+    </Router>
 
   );
 }

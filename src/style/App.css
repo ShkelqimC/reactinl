@@ -1,0 +1,86 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color:white;
+  background-color: rgb(21, 21, 21);
+}
+.App {
+  text-align: center;
+}
+.navbar{
+  display: flex;
+  background-color: rgb(21, 21, 21);
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  height:65px;
+  padding: 0.5rem 80px;
+  box-shadow: 0 2px 2px 2px rgba(64, 62, 62, 0.23);
+  margin-left: auto;;
+  margin-bottom: 20px;
+}
+
+.navlinks{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-left: auto;;
+  left:10px;
+}
+.nav-link{
+  margin: 0 1rem;
+  text-decoration: none;
+  padding: 10px;
+}
+.nav-link:hover{
+  background-color: rgb(105, 105, 105);
+  transition: all 1s;
+  border-radius: 15px;
+}
+.todoContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.formContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;;
+  align-items: center;
+}
+.todoList{
+  display: flex;
+  flex-direction: column;
+}
+
+.todoBtn{
+  background-color: gray;
+  padding: 6px;
+  border-radius: 9px;
+  cursor: pointer;
+  
+}
+.todoBtns{
+  margin-top: 10px;
+}
+.todoBtnAdd{
+  background-color: green;
+}
+.todoBtnClear{
+  background-color: orange;
+  color:black
+}
+
+.formInput{
+  background-color: rgb(185, 185, 185);
+  color:black;
+}
+.todoContainer p{
+  color:gray;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 20px;
+  
+}
