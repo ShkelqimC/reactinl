@@ -82,6 +82,7 @@
   font-weight: bold;
   text-decoration: underline;
   margin-bottom: 20px;
+  margin-top: 100px;
   
 }
 .jokeContainer{
@@ -126,8 +127,39 @@
   text-align: center;
 }
 .homeContainer{
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 80vh;
+}
+.homeContainer h2{
+
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  background-color: inherit;
+  margin-bottom: 65px;
+}
+
+.welcome{
+  width: 50%;
+  background-color: aqua;
+  text-align: center;
+  background-color: inherit;
+}
+
+.homeBtns{
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.homeBtns button{
+  height: 40px;
+  width: 200px;
+  background-color: white;
+  color:black;
+  border-radius: 20px;
+  margin: 10px;
+  font-weight: bold;
+  cursor: pointer;
 }
