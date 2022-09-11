@@ -22,6 +22,8 @@ function App() {
       <nav className="navbar">
         <h2>Zassignment1</h2>
         <div className="navLinks">
+          <Link className="nav-link" to="/">Home</Link>
+
 
           <Link className="nav-link" to="/Todos">Todos</Link>
           <Link className="nav-link" to="/DadJokes">Dad Jokes</Link>

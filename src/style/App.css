@@ -84,3 +84,50 @@
   margin-bottom: 20px;
   
 }
+.jokeContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+.joke{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 50vh;
+  width: 50%;
+  background-color: aqua;
+  border-radius: 50px;
+  align-items: center;
+}
+.title{
+  text-align: center;
+  margin-top: 20px;
+  background-color: inherit;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 2.2rem;
+
+}
+.joke button{
+  width: 140px;
+  background-color: white;
+  color:black;
+  height: 50px;
+  border-radius: 14px;
+}
+.joke button:hover{
+  background-color: gray;
+  transition: 0.3s ease all;
+}
+.joke p{
+  background-color: inherit;
+  color:black;
+  margin: 40px;
+  text-align: center;
+}
+.homeContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
